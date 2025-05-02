@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mystery Explorers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #aaa;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 25px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      width: 280px;
+      border: 1px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      border-color: #ffd700;
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-size: 20px;
+      color: #ffbf00;
+      margin-bottom: 8px;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+      margin-top: 40px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 30px auto 0;
+      padding: 12px 25px;
+      background: #ffd700;
+      color: #000;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-button:hover {
+      background: #00ced1;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🧭 Mystery Explorers</h1>
+    <p>Discover the world's most puzzling enigmas</p>
+  </header>
+
+  <section class="grid-container">
+    <a href="bermuda.html" class="card">
+      <img src="berbuda1.jpg" alt="Bermuda Triangle">
+      <div class="card-content">
+        <h3>Bermuda Triangle</h3>
+        <p>Ships and planes vanish mysteriously between Miami, Bermuda, and Puerto Rico.</p>
+      </div>
+    </a>
+
+    <a href="atlantis.html" class="card">
+      <img src="atlantis.jpg" alt="Lost City of Atlantis">
+      <div class="card-content">
+        <h3>Lost City of Atlantis</h3>
+        <p>A legendary advanced civilization that disappeared under the sea.</p>
+      </div>
+    </a>
+
+    <a href="nazca.html" class="card">
+      <img src="nazca.jpg" alt="Nazca Lines">
+      <div class="card-content">
+        <h3>Nazca Lines</h3>
+        <p>Huge ancient drawings visible only from the sky. How and why were they made?</p>
+      </div>
+    </a>
+
+    <a href="stonehenge.html" class="card">
+      <img src="stonehenge.jpg" alt="Stonehenge">
+      <div class="card-content">
+        <h3>Stonehenge</h3>
+        <p>Massive stones arranged mysteriously; nobody is sure how they were moved.</p>
+      </div>
+    </a>
+
+    <a href="pyramids.html" class="card">
+      <img src="pyramids.jpg" alt="Pyramids of Egypt">
+      <div class="card-content">
+        <h3>Pyramids of Egypt</h3>
+        <p>Built with incredible precision thousands of years ago...but how?</p>
+      </div>
+    </a>
+
+    <a href="mary.html" class="card">
+        <img src="mary.jpg" alt="The Mary Celeste Ship">
+        <div class="card-content">
+          <h3>The Mary Celeste</h3>
+          <p>A ghost ship found abandoned at sea with no trace of her crew.</p>
+        </div>
+      </a>
+      
+
+    <a href="dyatlov.html" class="card">
+      <img src="dyatlov.jpg" alt="Dyatlov Pass Incident">
+      <div class="card-content">
+        <h3>Dyatlov Pass Incident</h3>
+        <p>Nine hikers died under strange, unexplained circumstances in 1959.</p>
+      </div>
+    </a>
+
+    <a href="yonaguni.html" class="card">
+      <img src="yonaguni.jpg" alt="Yonaguni Monument">
+      <div class="card-content">
+        <h3>Yonaguni Monument</h3>
+        <p>Underwater structures that might be ancient man-made ruins.</p>
+      </div>
+    </a>
+
+    <a href="nessie.html" class="card">
+      <img src="nessie.jpg" alt="Loch Ness Monster">
+      <div class="card-content">
+        <h3>Loch Ness Monster</h3>
+        <p>A legendary creature said to live in a deep Scottish lake.</p>
+      </div>
+    </a>
+
+    <a href="area51.html" class="card">
+      <img src="area51.jpg" alt="Area 51">
+      <div class="card-content">
+        <h3>Area 51</h3>
+        <p>A secretive U.S. military base linked to UFO and alien theories.</p>
+      </div>
+    </a>
+
+    <a href="sphinx.html" class="card">
+      <img src="sphinx.jpg" alt="Great Sphinx of Giza">
+      <div class="card-content">
+        <h3>Great Sphinx of Giza</h3>
+        <p>Its true age and hidden chambers are still debated by experts.</p>
+      </div>
+    </a>
+
+    <a href="taos.html" class="card">
+      <img src="taos.jpg" alt="Taos Hum">
+      <div class="card-content">
+        <h3>Taos Hum</h3>
+        <p>A mysterious low-frequency hum that only some people can hear.</p>
+      </div>
+    </a>
+
+    <a href="devil.html" class="card">
+      <img src="devil.jpg" alt="Devil's Sea">
+      <div class="card-content">
+        <h3>Devil’s Sea</h3>
+        <p>Similar to the Bermuda Triangle — ships vanish mysteriously near Japan.</p>
+      </div>
+    </a>
+
+    <a href="voynich.html" class="card">
+      <img src="voynich.jpg" alt="Voynich Manuscript">
+      <div class="card-content">
+        <h3>Voynich Manuscript</h3>
+        <p>A centuries-old book written in an undecipherable language.</p>
+      </div>
+    </a>
+
+    <a href="baltic.html" class="card">
+      <img src="baltic.jpg" alt="Baltic Sea Anomaly">
+      <div class="card-content">
+        <h3>Baltic Sea Anomaly</h3>
+        <p>A strange object underwater, looking like a crashed UFO.</p>
+      </div>
+    </a>
+  </section>
+
+  <div style="text-align:center;">
+    <a href="sample.html" class="back-button">← Back to Homepage</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Mystery Explorers. Dive deeper into the unknown...
+  </footer>
+
+</body>
+</html>

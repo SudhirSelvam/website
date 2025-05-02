@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html { height: 100%; margin: 0; }
+    .background {
+      background: url('bg16.jpg') no-repeat center center/cover;
+      height: 100%;
+      position: relative;
+      
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    .logo-small {
+      width: 250px;
+      height: 100px;
+    }
+    .card {
+      background-color: rgba(12, 10, 10, 0);
+      opacity: 0.95;
+      border-radius: 10px;
+      padding: 70px;
+    }
+    h1 {
+    color: #ffffff;
+}
+    .btn-container{
+        display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="background">
+  <div class="overlay"></div>
+  <div class="d-flex justify-content-center align-items-center content" style="height: 100%;">
+    <div class="card text-center">
+        <div class="h1">
+      <h1 class="d-inline-block ms-3">Sign Up</h1>
+      </div>
+      <form class="mt-4" method="POST">
+        <div class="mb-3">
+          <input type="text" class="form-control" name="name" placeholder="Username" required>
+        </div>
+        <div class="mb-3">
+        <input type="email" class="form-control" name="email" placeholder="Email" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" name="password" placeholder="Password" required>
+        </div>
+        <div class="btn-container">
+        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+        <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="index.html" class="btn btn-secondary">Back to Home</a>
+          
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
